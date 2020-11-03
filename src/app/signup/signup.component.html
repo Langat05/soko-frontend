@@ -1,1 +1,31 @@
-<p>signup works!</p>
+<div class="jumbotron reg">
+    <h1><b>Welcome to Wonder Mall</b></h1><br>
+  
+    <div id="det" class="container">
+      <p><b>User Registration</b></p>
+  
+      <form>
+        <div class="form-group">
+          <div class="form-group">
+            <input type="password" class="form-control" id="exampleInputusername" [(ngModel)]="register.username"
+              placeholder="username">
+          </div>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            [(ngModel)]="register.email" placeholder="Email address">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <div class="form-group">
+            <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="register.password"
+              placeholder="password ">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="exampleInputPassword2" [(ngModel)]="register.password"
+              placeholder="confirm password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleremember">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
