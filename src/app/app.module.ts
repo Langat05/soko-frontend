@@ -25,7 +25,7 @@ import { PasswordResetComponent } from './password-reset/password-reset.componen
 
     LogoutComponent,
     HomepageComponent,
-    NavbarComponent
+    NavbarComponent,
 
   ],
   imports: [

@@ -22,8 +22,13 @@
                     <input type="password" class="form-control" id="exampleInputPassword2"
                         [(ngModel)]="register.password" placeholder="confirm password">
                 </div>
-                <button (click)="onRegister()" type="submit" class="btn btn-primary">Register</button>
+                <button (click)="onSignup()" type="submit" class="btn btn-primary">Register</button>
             </div>
         </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already have an account? <a  (click)="onLogin()"class="ml-2" routerLink="/login" >Sign In</a>
+            </small>
+        </div>
     </div>
 </div>
