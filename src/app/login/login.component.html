@@ -1,6 +1,6 @@
-<div class="jumbotron reg">
-    <h1><b>Welcome to Wonder Mall</b></h1><br>
 
+<div class="jumbotron reg">
+    <h1><b>Welcome to Sokoline</b></h1><br>
     <div id="det" class="container">
         <p><b>User Login</b></p>
 
@@ -21,5 +21,10 @@
                 <button (click)="onLogin()" type="submit" class="btn btn-primary">Login</button>
             </div>
         </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Dont have an account? <a  (click)="onSignup()"class="ml-2 signup_link" routerLink="/signup" >Sign up</a>
+            </small>
+        </div>
     </div>
 </div>
