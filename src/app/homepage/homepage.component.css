@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Handlee&display=swap');
+
+
+
 .welcome{
-    background-image: url(../../assets/img_bg_3.jpg);
+    background-image: url(../../assets/hero_2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -7,28 +11,74 @@
     height: 90vh;
 }
 
-.design:hover{
+.affordable{
     background-color:#5e745e;
-    cursor: pointer;
 }
-.usability:hover{
+.elegant{
     background-color: #863e3e;
+}
+
+.classic{
+    background-color: teal;
+}
+
+
+.affordable:hover{
+    background-color:#384138;
     cursor: pointer;
 }
-.content:hover{
-    background-color: teal;
+.elegant:hover{
+    background-color: #491616;
+    cursor: pointer;
+}
+.classic:hover{
+    background-color: #234444;
     cursor: pointer;
 }
 
+.box {
+    top: 50%;
+    position: absolute;
+    transform: translate(-50, -50);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40%;
+    font-family: 'Do Hyeon', sans-serif;
+}
 
 span{
     width: 100%;
     text-align: center;
     margin: auto;
-    border-radius: 50%;
+    margin-right: 30px;
+        
+}
+
+.text-white{
+    padding-top: 30px;
     height: 80px;
     width: 80px;
-    left: 40%;
-    
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+}
+
+.welcome-head{
+    font-family: 'Handlee', cursive;
+    padding-top: 10%;
+    color: #7171b1;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.welcome-text{
+    font-family: 'Handlee', cursive;
+    padding-top: 10%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    color: #7171b1;
 }
 
