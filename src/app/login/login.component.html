@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="jumbotron reg">
+    <h1><b>Welcome to Wonder Mall</b></h1><br>
+
+    <div id="det" class="container">
+        <p><b>User Login</b></p>
+
+        <form>
+            <div class="form-group">
+                <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputusername"
+                        [(ngModel)]="input.username" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                        [(ngModel)]="input.password" placeholder="password ">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleremember">Remember me</label>
+                </div>
+                <button (click)="onLogin()" type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

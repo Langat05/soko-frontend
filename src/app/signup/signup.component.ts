@@ -25,8 +25,9 @@ export class SignupComponent implements OnInit {
       response => {
         alert('User' + this.register.username + 'has been registered')
       },
-      error => console.log('error', error)
-
+      error => {
+        console.log('error', error);
+      }
     );
  
   }
