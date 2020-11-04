@@ -7,7 +7,12 @@ import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+
+import { HomepageComponent } from './homepage/homepage.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 import { PasswordResetComponent } from './password-reset/password-reset.component';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +21,10 @@ import { PasswordResetComponent } from './password-reset/password-reset.componen
     LoginComponent,
     LogoutComponent,
     PasswordResetComponent,
+
+    LogoutComponent,
+    HomepageComponent,
+    NavbarComponent
 
   ],
   imports: [

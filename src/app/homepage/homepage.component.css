@@ -1,0 +1,34 @@
+.welcome{
+    background-image: url(../../assets/img_bg_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+.design:hover{
+    background-color:#5e745e;
+    cursor: pointer;
+}
+.usability:hover{
+    background-color: #863e3e;
+    cursor: pointer;
+}
+.content:hover{
+    background-color: teal;
+    cursor: pointer;
+}
+
+
+span{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    left: 40%;
+    
+}
+
