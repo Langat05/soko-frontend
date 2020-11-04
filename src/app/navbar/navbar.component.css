@@ -1,0 +1,29 @@
+#brand {
+    color: #3b3b64;
+    padding: 10px;
+    border: 2px solid #1565C0;
+    border-bottom: none;
+    font-size: 18px;
+    font-weight: 900;
+
+}
+
+#brand:hover {
+    border-bottom: 2px solid #1565C0;
+    color: #64B5F6;
+    text-decoration: none;
+}
+
+.accounts {
+    padding: 10px;
+    letter-spacing: 1.5px;
+    color:  #3b3b64;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.accounts:hover {
+    text-decoration: none;
+    color: #585555;
+}
