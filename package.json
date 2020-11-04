@@ -19,10 +19,24 @@
     "@angular/platform-browser": "~10.2.0",
     "@angular/platform-browser-dynamic": "~10.2.0",
     "@angular/router": "~10.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^7.0.0",
     "bootstrap": "^4.5.3",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "fontawesome": "^5.6.3",
+    "jquery": "^3.5.1",
+    "popper": "^1.0.1",
+=======
     "popper": "^1.0.1",
     "fontawesome": "^5.6.3",
     "jquery": "^3.5.1",
+>>>>>>> 30d43e0e47173cf9efca34f68a8e29f247bf1b4f
+=======
+    "fontawesome": "^5.6.3",
+    "jquery": "^3.5.1",
+    "popper": "^1.0.1",
+
+>>>>>>> 62f15b61777838f5a1d79c138aeb58056f853232
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
