@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -23,7 +24,7 @@ export class SignupComponent implements OnInit {
   registerUser() {
     this.userService.registerNewUser(this.register).subscribe(
       response => {
-        alert('User' + this.register.username + 'has been registered')
+        alert('User ' + this.register.username + ' has been registered')
       },
       error => {
         console.log('error', error);
@@ -32,5 +33,8 @@ export class SignupComponent implements OnInit {
  
   }
 }
+
+
+
 
 

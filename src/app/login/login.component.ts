@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     this.userService.loginUser(this.input).subscribe(
       response => {
         console.log(response);
-        alert(this.input.username + 'logged in successfully')
+        alert(this.input.username + ' logged in successfully')
       },
       error => {
         console.log('error', error);
