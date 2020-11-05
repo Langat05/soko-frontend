@@ -7,22 +7,22 @@
         <form>
             <div class="form-group">
                 <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputusername"
-                        [(ngModel)]="register.username" placeholder="username">
+                    <input type="text" class="form-control" id="exampleInputusername"
+                        [(ngModel)]="register.username" name="username" placeholder="username">
                 </div>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    [(ngModel)]="register.email" placeholder="Email address">
+                    [(ngModel)]="register.email" name="email" placeholder="Email address">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
                 <div class="form-group">
                     <input type="password" class="form-control" id="exampleInputPassword1"
-                        [(ngModel)]="register.password" placeholder="password ">
+                        [(ngModel)]="register.password" name="password" placeholder="password ">
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" id="exampleInputPassword2"
-                        [(ngModel)]="register.password" placeholder="confirm password">
+                        [(ngModel)]="register.password" name="confirm_password" placeholder="confirm password">
                 </div>
-                <button (click)="onSignup()" type="submit" class="btn btn-primary">Register</button>
+                <button (click)="registerUser()" type="submit" class="btn btn-primary">Register</button>
             </div>
         </form>
         <div class="border-top pt-3">
