@@ -13,6 +13,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { PasswordResetComponent } from './password-reset/password-reset.component';
+import { ProductsComponent } from './products/products.component';
+
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { PasswordResetComponent } from './password-reset/password-reset.componen
     LogoutComponent,
     HomepageComponent,
     NavbarComponent,
+    ProductsComponent,
+    
 
   ],
   imports: [
