@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private userService: UserService,
     private router: Router,
-    private route: ActivatedRoute, )  {}
+    private route: ActivatedRoute )  {}
   ) { }
 
   ngOnInit() {
@@ -23,16 +23,18 @@ export class LoginComponent implements OnInit {
       password: ''
     };
 
-    this.route.queryParams
-      .subscribe(params => this.return = params['return'] || '/forums');
   }
 
 
   onLogin() {
-    if (this.username && this.password) {
-      this.userService.login(this.username);
-      this.router.navigateByUrl(this.return);
-    }
+    this.userService.loginUser(this.input).subscribe(
+      response => {
+        console.log(response);
+        alert(this.input.username + ' logged in successfully')
+      },
+      error => {
+        console.log('error', error);
+      }
 
     );
 
