@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService,CanActivate } from '../user.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -11,18 +11,13 @@ export class LoginComponent implements OnInit {
   [x: string]: any;
   input;
 
-  constructor(
-    private userService: UserService,
-    private router: Router,
-    private route: ActivatedRoute )  {}
-  ) { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
     this.input = {
       username: '',
       password: ''
     };
-
   }
 
 
