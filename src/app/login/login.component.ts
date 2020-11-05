@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService,CanActivate } from '../user.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -11,28 +11,25 @@ export class LoginComponent implements OnInit {
   [x: string]: any;
   input;
 
-  constructor(
-    private userService: UserService,
-    private router: Router,
-    private route: ActivatedRoute, )  {}
-  ) { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
     this.input = {
       username: '',
       password: ''
     };
-
-    this.route.queryParams
-      .subscribe(params => this.return = params['return'] || '/forums');
   }
 
 
   onLogin() {
-    if (this.username && this.password) {
-      this.userService.login(this.username);
-      this.router.navigateByUrl(this.return);
-    }
+    this.userService.loginUser(this.input).subscribe(
+      response => {
+        console.log(response);
+        alert(this.input.username + ' logged in successfully')
+      },
+      error => {
+        console.log('error', error);
+      }
 
     );
 
